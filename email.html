@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Halloween Store</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/email.css">
+</head>
+
+<body>
+	<header>
+		<img src="images/pumpkin.gif" alt="Pumpkin Logo">
+		<h1>The Halloween Store</h1>
+		<h3>For the little Goblin in all of us!</h3>
+	</header>
+	<nav class="nav_top">       
+		<a href="index.html" class="flex-item" >Home</a>
+		<a href="productList.html" class="flex-item">Product List</a>
+		<a href="personal/index.html" class="flex-item">Personal</a>
+		<a href="#" class="flex-item">Decorating Ideas</a>
+		<a href="email.html" class="flex-item" id="active_page">Join Email</a>  
+	</nav>
+	<main>
+		<div class="flex-container">
+			<div>
+				<nav  id="nav_body">
+					<ul>
+						<li><a href="products/props.html">Props</a></li>
+						<li><a href="#">Costumes</a></li>
+						<li><a href="specialEffects.html">Special FX</a></li>
+						<li><a href="#">Masks</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				<h2>Please enter the following information:</h2>
+                <form action="subscribe.html" >
+                    <div class="field">
+                    <label for="first">First Name:</label>
+                    <input type="text" id="first" class="align" name="first" required autofocus></div><br>
+                    <div class="field">
+                    <label for="last">Last Name:</label>
+                    <input type="text" id="last" class="align" name="last" required></div><br>
+                    <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" class="align" name="email" required></div><br>
+                    <div class="field">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" class="align" name="zipCode" pattern="[0-9]{6}" placeholder="Optional but appreciated: 999999" ></div><br><br>
+                    
+                    <input type="submit"value="Subscribe" id="Subscribe">
+                </form>
+				
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<p>
+			&copy; 2018 Ben Murach
+		</p>
+	</footer>	
+</body>
+</html>
